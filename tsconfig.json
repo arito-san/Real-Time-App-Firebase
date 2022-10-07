@@ -5,6 +5,15 @@
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
     /* Completeness */
-    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+    "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
+    "baseUrl": "./",                                  /* Specify the base directory to resolve non-relative module names. */
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@styles/*": [ "./src/styles/*"],
+      "@assets/*": [ "./src/assets/*"],
+      "@hooks/*": [ "./src/hooks/*"],
+      "@services/*": [ "./src/services/*"],
+      "@views/*": [ "./src/views/*"],
+    }, 
   }
 }
