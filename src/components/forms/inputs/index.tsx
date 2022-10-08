@@ -14,6 +14,18 @@ const InputEmail = () => {
 
     )
 }
+const InputCpf = () => {
+    return (
+        <View style={styles.container}>
+            <TextInput
+                placeholder="CPF"
+                placeholderTextColor={'#fff'}
+                style={styles.input}
+            />
+        </View>
+
+    )
+}
 const InputPassword = () => {
     return (
         <View style={styles.container}>
@@ -26,6 +38,18 @@ const InputPassword = () => {
         </View>
     )
 }
+const InputConfirmPassword = () => {
+    return (
+        <View style={styles.container}>
+            <TextInput
+                placeholder="Confirmar senha"
+                placeholderTextColor={'#fff'}
+                style={styles.input}
+                secureTextEntry={true}
+            />
+        </View>
+    )
+}
 
 
-export { InputEmail, InputPassword }
+export { InputEmail, InputPassword, InputCpf, InputConfirmPassword }
