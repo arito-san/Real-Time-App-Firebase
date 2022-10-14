@@ -1,8 +1,8 @@
 import React from "react";
-import RecoveryPassword from "@views/recoveryPassword/index";
+import Routes from "../routes/index";
 
 export default () => {
     return (
-        <RecoveryPassword />
+        <Routes />
     )
 }
