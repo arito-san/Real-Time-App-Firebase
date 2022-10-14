@@ -1,8 +1,8 @@
 import React from "react";
-import Register from "@views/register";
+import RecoveryPassword from "@views/recoveryPassword/index";
 
 export default () => {
     return (
-        <Register />
+        <RecoveryPassword />
     )
 }
