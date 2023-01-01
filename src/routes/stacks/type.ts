@@ -5,5 +5,6 @@ export type propsNavigationStack = {
     RecoveryPassword: undefined
     Register: undefined
     Home: undefined
+    Message: undefined
 }
 export type propsStack = NativeStackNavigationProp<propsNavigationStack>
