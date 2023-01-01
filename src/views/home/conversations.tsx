@@ -1,11 +1,12 @@
 import React from 'react';
 import { View, StatusBar } from 'react-native';
-import Icon from 'react-native-vector-icons//AntDesign'
+import ChatCard from '@components/chatCard';
+
 export default () => {
     return (
         <View>
             <StatusBar hidden={true} />
-            <Icon name="wechat" size={20} color="red" />
+            <ChatCard />
         </View>
     )
-} 
+}
