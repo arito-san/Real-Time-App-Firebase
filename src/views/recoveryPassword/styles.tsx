@@ -22,9 +22,9 @@ export default EStyleSheet.create({
         height: '11rem',
         width: '14.375rem'
     },
-    containerInput: { flex: 1, justifyContent: 'center' },
-    containerText: { flex: 1 },
-    containerImg: { flex: 1, justifyContent: 'flex-end', alignitems: 'center' },
+    containerInput: { justifyContent: 'center' },
+    containerText: { marginTop: '2.5rem' },
+    containerImg: { marginTop: '5rem', justifyContent: 'flex-end', alignitems: 'center' },
     containerLimitText: { width: '18rem' }
 
 })

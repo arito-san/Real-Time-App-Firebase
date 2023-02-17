@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
 import React from "react";
-import App from "@views/index";
+import App from "@hooks/index";
 
 export default () => {
   return (

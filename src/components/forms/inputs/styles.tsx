@@ -12,13 +12,15 @@ export default EStyleSheet.create({
         borderWidth: '0.0625rem',
         borderColor: '#fff',
         borderRadius: '1.25rem',
-        width: '18rem',
+        maxWidth: '18rem',
         height: '2.625rem',
-        marginBottom:'1rem'
+        marginBottom: '1rem',
+        flexDirection: 'row',
+        justifyContent: 'space-between'
     },
     input: {
-        marginLeft: '1rem',
-        color:'#fff'
+        color: '#fff',
+        width: '80%'
     }
 
 

@@ -10,7 +10,7 @@ EStyleSheet.build({
 export default EStyleSheet.create({
     container: {
         justifyContent: 'space-between',
-        paddingVertical: '1rem',
+        paddingTop: '1rem',
         flexDirection: 'row',
         paddingHorizontal: '1rem',
     },
@@ -25,8 +25,8 @@ export default EStyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center'
     },
-    textName: { fontWeight: 'bold', color: '#000' },
-    containerText: { flexDirection: 'column', marginLeft: '1rem' },
+    textName: { fontWeight: 'bold', color: '#000', textTransform: 'capitalize' },
+    containerText: { flexDirection: 'column', marginLeft: '1rem'},
     containerImg: { alignSelf: 'center' },
     containerLeft: { flexDirection: 'row' }
 

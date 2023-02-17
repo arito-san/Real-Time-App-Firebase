@@ -21,12 +21,11 @@ export default EStyleSheet.create({
         borderRadius: '1.5rem',
         height: '3rem',
         width: '3rem',
-        backgroundColor: '#169CCC',
         alignItems: 'center',
         justifyContent: 'center'
     },
-    textName: { fontWeight: 'bold', color: '#000' },
-    containerText: { flexDirection: 'column', marginLeft: '1rem' },
+    textName: { fontWeight: 'bold', color: '#000', textTransform: 'capitalize' },
+    containerText: { flexDirection: 'column', marginLeft: '1rem', maxWidth: '60%' },
     containerImg: { alignSelf: 'center' },
     containerLeft: { flexDirection: 'row' }
 

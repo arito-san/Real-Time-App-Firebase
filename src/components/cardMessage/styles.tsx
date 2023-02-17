@@ -25,7 +25,6 @@ export default EStyleSheet.create({
         color: 'gray'
     },
     messages: {
-
         color: 'black'
     },
     name: {

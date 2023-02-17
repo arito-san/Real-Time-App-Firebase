@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import styles from './styles';
 import { View, Text, Image, StatusBar } from 'react-native';
 import { InputEmail } from "@components/forms/inputs/index";
 import { MainButton } from "@components/buttons";
-const img = require('../../assets/recovery.png')
-export default () => {
+import Loading from "@components/loading/loading";
+const img = require('../../assets/recovery.png');
+export default ({ navigation }: any) => {
+    const [email, setEmail] = useState('');
+    const [loading, setLoading] = useState(false);
     return (
         <View style={styles.container}>
             <StatusBar hidden={true} />
@@ -18,14 +21,15 @@ export default () => {
                         sua senha.
                     </Text>
                 </View>
-                <InputEmail />
-                <MainButton />
+                <InputEmail
+                    value={email}
+                    onChangeText={(text: string) => setEmail(text)} />
+                <MainButton title={'Recuperar senha'} onPress={() => console.warn('ops, não fiz ainda')} />
             </View>
             <View style={styles.containerText}>
-                <Text style={styles.text}>Voltar para login</Text>
+                <Text onPress={() => navigation.goBack()} style={[styles.text, { textDecorationLine: 'underline' }]}>Voltar para login</Text>
             </View>
-
-
+            <Loading animating={loading} />
         </View>
     )
 }

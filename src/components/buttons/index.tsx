@@ -1,17 +1,23 @@
 import React from "react";
-import { View, Text, TouchableOpacity } from 'react-native';
+import { Text, TouchableOpacity } from 'react-native';
 import styles from "./styles";
 
-const MainButton = () => {
+const MainButton = ({ title, onPress }: any) => {
     return (
-        <TouchableOpacity style={styles.container}        >
+        <TouchableOpacity onPress={onPress} style={styles.container}>
             <Text style={styles.text}>
-                Entrar
+                {title}
             </Text>
         </TouchableOpacity>
     )
 }
-
-
-
-export { MainButton }
+const MainButtonOff = ({ title }: any) => {
+    return (
+        <TouchableOpacity disabled={true} style={[styles.container, { backgroundColor: '#5E5E5E' }]}>
+            <Text style={styles.text}>
+                {title}
+            </Text>
+        </TouchableOpacity>
+    )
+}
+export { MainButton, MainButtonOff }
